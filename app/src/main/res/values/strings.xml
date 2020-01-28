@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Inverse Matrix Calculator</string>
+    <string name="title_activity_add">Calculate Inverse</string>
+    <string name="delete">Delete</string>
+    <string name="action_settings">Settings</string>
+    <string name="bracket_start">[</string>
+    <string name="bracket_end">]</string>
+    <string name="load_favorite">Load favorite</string>
+    <string name="make_favorite">make favorite</string>
+</resources>

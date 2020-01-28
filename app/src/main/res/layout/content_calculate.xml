@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_calculate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.CalculationActivity"
+    tools:showIn="@layout/activity_calculate">
+
+
+    <EditText
+        android:id="@+id/add_a11"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_a12"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_a21"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="80dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_a11" />
+
+    <EditText
+        android:id="@+id/add_a22"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginEnd="80dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_a12" />
+
+    <Button
+        android:id="@+id/make_fav"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/rounded_btn"
+        android:text="@string/make_favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/load_fav"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="350dp"
+        android:background="@drawable/rounded_btn"
+        android:text="@string/load_favorite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="@string/bracket_start"
+        android:textSize="85dp"
+        app:layout_constraintEnd_toStartOf="@+id/add_a11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bracket_end"
+        android:textSize="85sp"
+        app:layout_constraintStart_toEndOf="@+id/add_a12"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
